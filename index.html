@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO & Meta Dasar -->
+  <title>Namamu — Pengamat di Kedalaman</title>
+  <meta name="description" content="Ruang digital seorang pelajar yang sedang mendekode dunia — satu baris kode dan satu kanji sehari. Bermarkas di kedalaman yang tenang." />
+  <meta name="author" content="Namamu" />
+
+  <!-- Open Graph (untuk pratinjau link di media sosial) -->
+  <meta property="og:title" content="Namamu — Pengamat di Kedalaman" />
+  <meta property="og:description" content="Sedang mendekode dunia, satu baris kode dan satu kanji sehari." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://namamu.github.io" />
+
+  <!-- Favicon sederhana pakai emoji -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌊</text></svg>" />
+
+  <!-- CSS Satu-satunya — self-hosted, zero CDN -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!--
+    CATATAN FONT:
+    Idealnya, unduh Playfair Display Bold (WOFF2) dari Google Fonts
+    dan self-host di folder /fonts/. Contoh cara pasang:
+
+    @font-face {
+      font-family: 'DeepObserver';
+      src: url('fonts/playfair-display-bold.woff2') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    File ini sudah menyertakan fallback ke Georgia jika font belum di-host.
+    Tambahkan @font-face di bagian atas style.css setelah font diunduh.
+  -->
+</head>
+<body>
+
+  <!-- ─── HEADER & NAVIGASI ─── -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <nav class="nav-wrapper" aria-label="Navigasi utama">
+        <!-- Logo / nama singkat -->
+        <a href="index.html" class="site-logo" aria-label="Beranda — Namamu">
+          ∿ Namamu
+        </a>
+
+        <!-- Link navigasi -->
+        <ul class="nav-links" role="list">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="about.html">Tentang</a></li>
+          <li><a href="logbook.html">Logbook</a></li>
+          <li><a href="contact.html">Sapa Aku</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ─── KONTEN UTAMA ─── -->
+  <main id="main-content">
+    <section class="hero" aria-labelledby="hero-name">
+      <div class="container">
+        <div class="hero-inner">
+
+          <!-- Koordinat / label atmosferik -->
+          <p class="hero-coordinates" aria-hidden="true">
+            Frekuensi terbuka · Kedalaman tenang
+          </p>
+
+          <!-- Nama utama — ini headline terbesar -->
+          <h1 class="hero-name" id="hero-name">
+            Namamu
+          </h1>
+
+          <!-- Tagline: siapa, apa yang sedang dilakukan -->
+          <p class="hero-tagline">
+            Sedang mendekode dunia,<br />
+            satu baris kode dan satu kanji sehari.<br />
+            <em>Bermarkas di kedalaman yang tenang.</em>
+          </p>
+
+          <!-- Ilustrasi SVG statis — siluet penyelam minimalis -->
+          <div class="hero-illustration" aria-label="Ilustrasi siluet penyelam di kedalaman laut">
+            <svg
+              width="280"
+              height="120"
+              viewBox="0 0 280 120"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <!-- Garis horison laut -->
+              <line x1="0" y1="60" x2="280" y2="60" stroke="rgba(197,164,107,0.12)" stroke-width="1" />
+
+              <!-- Gelombang laut minimalis -->
+              <path
+                d="M0 55 Q35 45 70 55 Q105 65 140 55 Q175 45 210 55 Q245 65 280 55"
+                stroke="rgba(197,164,107,0.22)"
+                stroke-width="1.5"
+                fill="none"
+              />
+              <path
+                d="M0 62 Q35 52 70 62 Q105 72 140 62 Q175 52 210 62 Q245 72 280 62"
+                stroke="rgba(197,164,107,0.10)"
+                stroke-width="1"
+                fill="none"
+              />
+
+              <!-- Siluet penyelam — badan -->
+              <ellipse cx="140" cy="80" rx="9" ry="14" fill="rgba(197,164,107,0.55)" />
+
+              <!-- Helm penyelam antik -->
+              <circle cx="140" cy="63" r="8" fill="rgba(197,164,107,0.55)" />
+              <rect x="136" y="59" width="8" height="5" fill="rgba(9,10,15,0.8)" rx="1" />
+
+              <!-- Kaca helm — kilau kecil -->
+              <circle cx="143" cy="61" r="1.5" fill="rgba(197,164,107,0.8)" />
+
+              <!-- Lengan kiri -->
+              <line x1="131" y1="78" x2="118" y2="88" stroke="rgba(197,164,107,0.5)" stroke-width="3" stroke-linecap="round" />
+              <!-- Lengan kanan, memegang sesuatu -->
+              <line x1="149" y1="78" x2="162" y2="88" stroke="rgba(197,164,107,0.5)" stroke-width="3" stroke-linecap="round" />
+
+              <!-- Kaki / sirip -->
+              <path d="M135 94 L128 105 L132 105 L135 98 L138 105 L142 105 L140 97" fill="rgba(197,164,107,0.45)" />
+              <path d="M145 94 L148 105 L152 105 L148 98 L151 105 L155 105 L150 97" fill="rgba(197,164,107,0.45)" />
+
+              <!-- Gelembung udara -->
+              <circle cx="146" cy="55" r="2" fill="rgba(197,164,107,0.25)" />
+              <circle cx="149" cy="47" r="1.4" fill="rgba(197,164,107,0.18)" />
+              <circle cx="147" cy="40" r="1" fill="rgba(197,164,107,0.12)" />
+
+              <!-- Bintang-bintang kecil di atas (luar angkasa = langit di atas laut) -->
+              <circle cx="40" cy="20" r="1" fill="rgba(197,164,107,0.4)" />
+              <circle cx="95" cy="12" r="0.8" fill="rgba(197,164,107,0.3)" />
+              <circle cx="180" cy="18" r="1.2" fill="rgba(197,164,107,0.45)" />
+              <circle cx="240" cy="8" r="0.7" fill="rgba(197,164,107,0.25)" />
+              <circle cx="60" cy="30" r="0.6" fill="rgba(197,164,107,0.2)" />
+              <circle cx="210" cy="28" r="0.9" fill="rgba(197,164,107,0.35)" />
+              <circle cx="130" cy="15" r="0.5" fill="rgba(197,164,107,0.3)" />
+
+              <!-- Partikel cahaya di kedalaman -->
+              <circle cx="80" cy="90" r="1.2" fill="rgba(197,164,107,0.15)" />
+              <circle cx="200" cy="95" r="0.8" fill="rgba(197,164,107,0.12)" />
+              <circle cx="50" cy="100" r="0.6" fill="rgba(197,164,107,0.1)" />
+              <circle cx="230" cy="85" r="1" fill="rgba(197,164,107,0.13)" />
+            </svg>
+          </div>
+
+          <!-- Tombol aksi utama -->
+          <div class="hero-actions">
+            <a href="about.html" class="btn-primary">
+              Kenalan Dulu →
+            </a>
+            <a href="logbook.html" class="btn-ghost">
+              Baca Logbook
+            </a>
+          </div>
+
+          <!-- Badge status -->
+          <p class="status-badge">
+            <span class="status-dot" aria-hidden="true"></span>
+            Aktif belajar · Selalu terbuka untuk kenalan baru
+          </p>
+
+          <!-- Navigasi cepat ke halaman utama -->
+          <nav class="quick-nav" aria-label="Navigasi cepat">
+            <div class="quick-nav-item">
+              <a href="about.html">Tentang Aku</a>
+              <span>Surat personal & progress belajar</span>
+            </div>
+            <div class="quick-nav-item">
+              <a href="logbook.html">Logbook</a>
+              <span>Cerita & catatan perjalanan</span>
+            </div>
+            <div class="quick-nav-item">
+              <a href="contact.html">Sapa Aku</a>
+              <span>Tiga cara buat kenalan</span>
+            </div>
+          </nav>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p class="footer-text">
+        Dibuat dengan HTML & CSS murni · Tidak ada framework, tidak ada cookie · 
+        <span aria-hidden="true">∿</span> Namamu · 2025
+      </p>
+    </div>
+  </footer>
+
+  <!-- JavaScript Minimal — hanya scroll reveal & active nav -->
+  <script src="script.js"></script>
+
+</body>
+</html>

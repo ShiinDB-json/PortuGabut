@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Tentang — Namamu</title>
+  <meta name="description" content="Siapa Namamu sebenarnya — surat personal, progress belajar, dan hal-hal kecil yang bikin hidup menarik." />
+  <meta name="author" content="Namamu" />
+
+  <meta property="og:title" content="Tentang — Namamu" />
+  <meta property="og:description" content="Seorang pelajar yang sedang mendekode dunia, satu langkah kecil setiap hari." />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌊</text></svg>" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ─── HEADER & NAVIGASI ─── -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <nav class="nav-wrapper" aria-label="Navigasi utama">
+        <a href="index.html" class="site-logo" aria-label="Beranda — Namamu">
+          ∿ Namamu
+        </a>
+        <ul class="nav-links" role="list">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="about.html">Tentang</a></li>
+          <li><a href="logbook.html">Logbook</a></li>
+          <li><a href="contact.html">Sapa Aku</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ─── KONTEN UTAMA ─── -->
+  <main id="main-content">
+    <div class="container">
+
+      <!-- Page Header -->
+      <header class="page-header">
+        <p class="page-header-eyebrow">Dossier Pribadi</p>
+        <h1>Tentang Aku</h1>
+      </header>
+
+      <!-- ─── SURAT PERSONAL ─── -->
+      <section class="letter-section reveal" aria-labelledby="letter-heading">
+        <p class="section-label" id="letter-heading">Surat Terbuka</p>
+
+        <div class="letter-body">
+          <p>
+            Halo, selamat datang di sudut kecil internetku. Namaku <strong>[Namamu]</strong>, 
+            dan kalau kamu tiba di sini entah karena penasaran atau tersesat — 
+            sama-sama selamat datang. Aku tidak terlalu pandai memperkenalkan diri dengan 
+            kalimat-kalimat keren, jadi izinkan aku jujur saja: aku ini orang yang 
+            <em>sedang dalam proses</em>. Proses belajar, proses paham diri sendiri, 
+            proses mencoba hal-hal baru sambil sesekali gagal dengan cukup dramatis.
+          </p>
+
+          <p>
+            Keseharianku cukup sederhana tapi penuh hal yang membuatku terus penasaran. 
+            Di siang hari aku mungkin sedang bergumul dengan baris kode JavaScript yang 
+            menolak jalan dengan benar — sambil minta tolong AI dengan sedikit malu-malu. 
+            Di malam hari aku mungkin sedang menonton anime atau drama Jepang, mengulangi 
+            adegan yang sama tiga kali karena ada percakapan yang ingin aku coba mengerti 
+            tanpa subtitle. Ada sesuatu yang memuaskan dari momen ketika kamu <em>paham</em>, 
+            bahkan hanya satu kalimat, dari bahasa yang sebelumnya terasa seperti sandi rahasia.
+          </p>
+
+          <p>
+            Kenapa bikin website ini? Bukan untuk cari kerja, bukan untuk keliatan keren. 
+            Aku hanya ingin punya ruang di internet yang terasa seperti <em>aku</em>. 
+            Dan kalau kamu baca ini sampai sejauh ini — mungkin kita bisa ngobrol. 
+            Soal apa saja: rekomendasi anime, frustrasi belajar bahasa, atau sekadar 
+            nanya kabar. Pintunya selalu terbuka.
+          </p>
+
+          <p class="letter-signature">— [Namamu]</p>
+        </div>
+      </section>
+
+      <hr class="divider" aria-hidden="true" />
+
+      <!-- ─── PANEL KONTROL PROGRESS ─── -->
+      <section class="reveal reveal-delay-1" aria-labelledby="progress-heading">
+        <p class="section-label" id="progress-heading">Panel Kontrol</p>
+        <h2 class="section-title">Progress Misi Aktif</h2>
+
+        <div class="progress-section">
+
+          <!-- Misi 1: JavaScript -->
+          <div class="progress-item">
+            <div class="progress-header">
+              <div>
+                <div class="progress-mission">Misi ∙ 001</div>
+                <div class="progress-label">Menguasai JavaScript</div>
+              </div>
+              <span class="progress-pct" aria-label="40 persen">40%</span>
+            </div>
+            <div 
+              class="progress-track" 
+              role="progressbar" 
+              aria-valuenow="40" 
+              aria-valuemin="0" 
+              aria-valuemax="100"
+              aria-label="Progress JavaScript: 40 persen"
+            >
+              <div class="progress-fill"></div>
+            </div>
+            <p class="progress-note">
+              Masih sering minta tolong AI untuk debug, tapi lama-lama ingin bisa mandiri. 
+              Satu hari, satu konsep kecil.
+            </p>
+          </div>
+
+          <!-- Misi 2: Bahasa Jepang -->
+          <div class="progress-item">
+            <div class="progress-header">
+              <div>
+                <div class="progress-mission">Dekode ∙ 002</div>
+                <div class="progress-label">Bahasa Jepang (日本語)</div>
+              </div>
+              <span class="progress-pct" aria-label="25 persen">25%</span>
+            </div>
+            <div 
+              class="progress-track"
+              role="progressbar"
+              aria-valuenow="25"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-label="Progress Bahasa Jepang: 25 persen"
+            >
+              <div class="progress-fill"></div>
+            </div>
+            <p class="progress-note">
+              Target: bisa ngobrol di Jepang tanpa translator. Masih jauh, tapi kanji hari ini 
+              sudah satu. 木 (ki) — pohon.
+            </p>
+          </div>
+
+          <!-- Misi 3: Bahasa Inggris -->
+          <div class="progress-item">
+            <div class="progress-header">
+              <div>
+                <div class="progress-mission">Log ∙ 003</div>
+                <div class="progress-label">Bahasa Inggris</div>
+              </div>
+              <span class="progress-pct" aria-label="70 persen">70%</span>
+            </div>
+            <div 
+              class="progress-track"
+              role="progressbar"
+              aria-valuenow="70"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-label="Progress Bahasa Inggris: 70 persen"
+            >
+              <div class="progress-fill"></div>
+            </div>
+            <p class="progress-note">
+              Fokus listening lewat drama dan anime berbahasa Inggris. 
+              Membaca oke, nulis lumayan — telinga masih perlu diasah.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <hr class="divider" aria-hidden="true" />
+
+      <!-- ─── RAK HARTA KARUN (Grid Minat) ─── -->
+      <section class="reveal reveal-delay-2" aria-labelledby="interest-heading">
+        <p class="section-label" id="interest-heading">Rak Harta Karun</p>
+        <h2 class="section-title">Yang Bikin Hari Terasa Hidup</h2>
+
+        <div class="interest-grid">
+
+          <!-- Kartu 1: Membaca -->
+          <div class="interest-card" role="article">
+            <span class="interest-icon" aria-hidden="true">📖</span>
+            <div class="interest-name">Membaca</div>
+            <div class="interest-desc">
+              Manga, komik, buku cerita. Genre favorit: slice of life dan 
+              petualangan yang tidak terlalu dramatis.
+            </div>
+          </div>
+
+          <!-- Kartu 2: Menonton -->
+          <div class="interest-card" role="article">
+            <span class="interest-icon" aria-hidden="true">📺</span>
+            <div class="interest-name">Menonton</div>
+            <div class="interest-desc">
+              Anime, drama Jepang, kartun, dan tokusatsu. Ya, aku serius 
+              soal tokusatsu — nanti cerita panjang.
+            </div>
+          </div>
+
+          <!-- Kartu 3: Ngoding -->
+          <div class="interest-card" role="article">
+            <span class="interest-icon" aria-hidden="true">⌨️</span>
+            <div class="interest-name">Ngoding</div>
+            <div class="interest-desc">
+              JavaScript adalah bahasa pertamaku. Masih sering error, 
+              tapi setiap error adalah cerita baru.
+            </div>
+          </div>
+
+          <!-- Kartu 4: Destinasi -->
+          <div class="interest-card" role="article">
+            <span class="interest-icon" aria-hidden="true">🗾</span>
+            <div class="interest-name">Jepang</div>
+            <div class="interest-desc">
+              Destinasi impian. Bukan sekadar wisata — ingin benar-benar 
+              bisa ngobrol dengan orang lokal.
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <hr class="divider" aria-hidden="true" />
+
+      <!-- ─── FUN FACTS ─── -->
+      <section class="reveal reveal-delay-3" aria-labelledby="facts-heading">
+        <p class="section-label" id="facts-heading">Catatan Tambahan</p>
+        <h2 class="section-title">Hal-hal Kecil yang Mungkin Relevan</h2>
+
+        <ul class="fun-facts">
+          <li>Kopi hitam tanpa gula adalah teman coding paling setia.</li>
+          <li>
+            Pernah menghabiskan satu malam penuh debugging, ternyata salah 
+            taruh titik koma. Klasik.
+          </li>
+          <li>
+            Tokusatsu favorit sepanjang masa: masih perdebatan internal yang 
+            belum selesai. Mungkin perlu satu episode podcast tersendiri.
+          </li>
+          <li>Tipe orang yang baca komentar YouTube subtitle Jepang untuk latihan kanji.</li>
+          <li>
+            Sering bilang "nanti tidur jam 11" tapi ujung-ujungnya jam 2 pagi 
+            masih nonton satu episode lagi.
+          </li>
+          <li>Introvert yang bisa jadi cukup berisik kalau sudah nyambung topiknya.</li>
+        </ul>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p class="footer-text">
+        Dibuat dengan HTML & CSS murni · Tidak ada framework, tidak ada cookie · 
+        <span aria-hidden="true">∿</span> Namamu · 2025
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
